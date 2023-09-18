@@ -438,3 +438,259 @@ a {
 .course-list .btn:hover {
     background: var(--primary-color);
 }
+
+/* ==================== Feedback ==================== */
+.feedback {
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback-item .info {
+    /* width: 159px; */
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42; /* 141.667% */
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.feedback-item .info .dots {
+    margin-top: 28px;
+    display: flex;
+}
+
+.feedback-item .info .dot {
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .info .dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+.feedback-item .content {
+    width: 66%;
+    margin-left: 241px;
+    margin-left: auto;
+}
+
+.feedback-item .content .open-quotes {
+}
+.feedback-item .content blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54; /* 153.846% */
+}
+
+/* ==================== Features ==================== */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features img.lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    width: 41%;
+}
+
+.features .content .heading {
+    /* color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    /* letter-spacing: -0.76px; */
+}
+
+.features .content .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.features .content .btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background: var(--primary-color);
+}
+
+/* Features-2nd */
+.features-2nd {
+    margin-top: 70px;
+}
+
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .images img {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+}
+
+/* ==================== Blog ==================== */
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #fffcf4;
+}
+.blog .blog-top {
+    text-align: center;
+}
+
+.blog-top .heading {
+    /* color: #130606;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px; */
+}
+
+.blog-top .desc {
+    margin: 16px auto 0;
+    width: 448px;
+    color: #696262;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.blog .blog-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 0 30px;
+}
+
+.blog .item {
+    width: calc(100% / 3);
+    background: #fff;
+    border-radius: 16px;
+}
+.blog .item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .info {
+    margin: 20px 20px 28px;
+}
+.blog .date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.blog .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-right: 4px;
+}
+
+.blog .date.date::after {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 1px;
+    border-radius: 999px;
+    background: #e2dfda;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: -27px;
+}
+.blog .title {
+    margin-top: 12px;
+}
+
+.blog .title a {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog .btn {
+    margin-top: 12px;
+}
+
+.blog .item .btn:hover {
+    background: var(--primary-color);
+}
