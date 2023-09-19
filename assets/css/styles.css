@@ -622,12 +622,14 @@ a {
     display: flex;
     margin-top: 55px;
     gap: 0 30px;
+    overflow: hidden;
 }
 
 .blog .item {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
     background: #fff;
     border-radius: 16px;
+    flex-shrink: 0;
 }
 .blog .item:hover {
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
@@ -689,8 +691,105 @@ a {
 
 .blog .btn {
     margin-top: 12px;
+    font-size: 1.4rem;
 }
 
 .blog .item .btn:hover {
     background: var(--primary-color);
+}
+
+.blog .dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    cursor: default;
+    background: var(--primary-color);
+}
+
+/* ==================== Footer ==================== */
+footer {
+    padding: 96px 135px 0;
+    background: #2e2100;
+}
+
+footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+footer .row .column {
+    width: calc(65% / 3);
+}
+
+footer .row .column:first-child {
+    width: 35%;
+}
+
+footer .column .logo {
+}
+
+footer .column .socials {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+footer .column .heading {
+    border-bottom: 1px solid #59554b;
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+footer .column .desc {
+    margin-top: 18px;
+    max-width: 267px;
+}
+
+footer .column .desc,
+footer .list a {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+footer .column .list {
+    margin-top: 28px;
+}
+
+footer .column li {
+    margin-top: 12px;
+}
+
+footer .column li strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+footer .copyright {
+    padding: 28px 0;
+}
+
+footer .copyright p {
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
 }
